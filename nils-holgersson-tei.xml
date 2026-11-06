@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--
+  Full-text TEI P5 de «Nils Holgerssons underbara resa genom Sverige».
+  Il file contiene SOLO l'attacco del primo capitolo, per mostrare il modello di codifica.
+  PRIMA DELLA CONSEGNA: collazionare il testo con l'edizione digitale (Runeberg o Litteraturbanken)
+  e completare i campi segnati con RICONCILIARE.
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="sv">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="sv">Nils Holgerssons underbara resa genom Sverige</title>
+        <title type="alt" xml:lang="it">Il viaggio meraviglioso di Nils Holgersson (titolo italiano da verificare)</title>
+        <author ref="#lagerlof">Selma Lagerlöf</author>
+        <respStmt>
+          <resp>Codifica TEI e modello di descrizione</resp>
+          <name>[Cognome, Nome]</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>[Università / Corso di Digital Humanities]</publisher>
+        <date when="2026-11">novembre 2026</date>
+        <availability>
+          <licence>Testo in pubblico dominio (autrice morta nel 1940); licenza della codifica da scegliere.</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Lagerlöf, Selma</author>,
+          <title>Nils Holgerssons underbara resa genom Sverige</title>.
+          <pubPlace>Stockholm</pubPlace>: <publisher>Albert Bonniers förlag</publisher>,
+          <date from="1906" to="1907">1906–1907</date>.
+          <!-- RICONCILIARE: indicare l'edizione digitale usata come fonte, con URL e data di consultazione -->
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>Il file fa parte del progetto «Nils, Pippi e gli altri», archivio digitale della letteratura per l'infanzia nordica (1835–1950).</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Modello dei fenomeni del testo che il progetto codifica:
+          <list>
+            <item><emph>Personaggi</emph>: <gi>rs</gi> con <att>type</att>="person" e <att>ref</att> verso l'indice dei personaggi; <gi>persName</gi> per i nomi propri.</item>
+            <item><emph>Animali parlanti</emph>: <gi>rs</gi> con <att>type</att>="animal".</item>
+            <item><emph>Luoghi</emph>: <gi>placeName</gi> con <att>ref</att> verso l'indice dei luoghi.</item>
+            <item><emph>Tempo</emph>: <gi>date</gi> e <gi>time</gi> con <att>when</att>.</item>
+            <item><emph>Discorso diretto</emph>: <gi>q</gi> con <att>who</att>.</item>
+            <item><emph>Termini geografico-didattici</emph>: <gi>term</gi> con <att>type</att>="geografia".</item>
+          </list>
+        </p>
+        <normalization>
+          <p>Le grafie storiche che si intende normalizzare si codificano con <gi>choice</gi>, <gi>orig</gi> e <gi>reg</gi>.</p>
+        </normalization>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="temi">
+          <bibl>Assi di lettura del progetto</bibl>
+          <category xml:id="paesaggio"><catDesc>Il territorio come materia di narrazione e di educazione</catDesc></category>
+          <category xml:id="folklore"><catDesc>Il patrimonio orale raccolto e riscritto</catDesc></category>
+          <category xml:id="lingua"><catDesc>La scrittura per l'infanzia come scelta linguistica</catDesc></category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="sv">svedese</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="#temi">
+          <term ref="#paesaggio">paesaggio</term>
+          <term ref="#folklore">folklore</term>
+          <term ref="#lingua">lingua</term>
+        </keywords>
+        <keywords>
+          <term>Letteratura per l'infanzia svedese</term>
+          <!-- RICONCILIARE: soggetto con URI LCSH o Wikidata -->
+        </keywords>
+      </textClass>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2026-10-27">Prima stesura dello scheletro: intestazione, modello di codifica e attacco del capitolo 1.</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="chapter" n="1" xml:id="cap01">
+        <head>Pojken</head>
+        <!-- titolo del capitolo e testo da collazionare con l'edizione digitale -->
+        <p>
+          Det var en gång <rs type="person" ref="#nils">en pojke</rs>.
+          Han var kanske fjorton år gammal, lång och slokig och blåvit i håret.
+          Han dög inte mycket till.
+        </p>
+      </div>
+    </body>
+
+    <back>
+      <div type="indici">
+        <head>Indici</head>
+
+        <listPerson>
+          <person xml:id="lagerlof">
+            <persName><surname>Lagerlöf</surname>, <forename>Selma</forename></persName>
+            <birth when="1858"/>
+            <death when="1940"/>
+            <!-- RICONCILIARE: <idno type="VIAF">…</idno> e <idno type="wikidata">…</idno> -->
+          </person>
+          <person xml:id="nils">
+            <persName>Nils Holgersson</persName>
+            <note>Protagonista: un ragazzo trasformato in folletto.</note>
+            <!-- RICONCILIARE: eventuale <idno type="wikidata"> del personaggio -->
+          </person>
+        </listPerson>
+
+        <listPlace>
+          <place xml:id="svezia">
+            <placeName>Svezia</placeName>
+            <!-- RICONCILIARE: <idno type="geonames">…</idno> -->
+          </place>
+          <place xml:id="skane">
+            <placeName>Skåne</placeName>
+            <!-- RICONCILIARE -->
+          </place>
+          <place xml:id="skurup">
+            <placeName>Skurup</placeName>
+            <location><geo>55.478 13.5</geo></location>
+            <!-- coordinate approssimate; RICONCILIARE -->
+          </place>
+          <place xml:id="karlskrona">
+            <placeName>Karlskrona</placeName>
+            <location><geo>56.161 15.587</geo></location>
+            <!-- RICONCILIARE -->
+          </place>
+          <place xml:id="kebnekaise">
+            <placeName>Kebnekaise</placeName>
+            <location><geo>67.9 18.53</geo></location>
+            <!-- coordinate approssimate; RICONCILIARE -->
+          </place>
+        </listPlace>
+      </div>
+    </back>
+  </text>
+</TEI>

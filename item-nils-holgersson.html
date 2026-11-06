@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nils Holgersson · Selma Lagerlöf · Nils, Pippi e gli altri</title>
+
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+  <meta name="DC.title" content="Nils Holgerssons underbara resa genom Sverige">
+  <meta name="DC.creator" content="Lagerlöf, Selma, 1858-1940">
+  <meta name="DC.date" content="1906/1907">
+  <meta name="DC.language" content="sv">
+  <meta name="DC.type" content="Text">
+  <meta name="DC.subject" content="Letteratura per l'infanzia; Geografia della Svezia; Identità nazionale">
+  <meta name="DC.rights" content="Pubblico dominio">
+  <link rel="alternate" type="application/xml" title="Metadati Dublin Core" href="xml/nils-holgersson-dc.xml">
+  <link rel="alternate" type="application/tei+xml" title="Full-text TEI" href="xml/nils-holgersson-tei.xml">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <nav class="topnav" id="topnav" aria-label="Navigazione principale">
+    <a class="brand" href="index.html">Nils, Pippi e gli altri</a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a class="off" aria-disabled="true">Progetto</a>
+      <a href="catalogo.html" class="active" aria-current="page">Catalogo</a>
+      <a href="dati.html">Dati</a>
+    </div>
+    <button class="icon" onclick="toggleNav()" aria-label="Apri o chiudi il menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <div class="container">
+    <ol class="breadcrumb" aria-label="Percorso">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li aria-current="page">Nils Holgersson</li>
+    </ol>
+
+    <div class="layout-item">
+
+      <main id="contenuto">
+        <p><span class="badge tipo-testo">Testo</span> <span class="badge tipo-video">Video</span> <span class="badge tipo-immagine">Immagine</span> <span class="badge">Svezia</span></p>
+        <h1>Nils Holgerssons underbara resa genom Sverige</h1>
+        <p class="muted">Selma Lagerlöf · 1906–1907 · titolo italiano provvisorio: <em>Il viaggio meraviglioso di Nils Holgersson</em> (da verificare)</p>
+
+        <p>Il libro nacque come testo scolastico: Lagerlöf rispondeva a una richiesta, del 1902, di un nuovo libro di lettura di geografia per le scuole svedesi. Un ragazzo viziato, rimpicciolito da un folletto, vola in groppa a un'oca da Skåne fino alla Lapponia e impara a conoscere il suo paese: per questo è il caso più chiaro, nella raccolta, di letteratura per l'infanzia al servizio dell'identità nazionale.</p>
+
+        <!-- ================= SCHEDA DESCRITTIVA ================= -->
+        <section aria-labelledby="h-scheda" prefix="dc: http://purl.org/dc/elements/1.1/ dcterms: http://purl.org/dc/terms/" typeof="dcterms:BibliographicResource" resource="#nils">
+          <h2 id="h-scheda">Scheda descrittiva</h2>
+          <p class="muted">I campi seguono il Dublin Core; i metadati sono marcati nel codice con attributi RDFa e disponibili anche in <a href="xml/nils-holgersson-dc.xml">XML</a>.</p>
+          <div class="table-wrap">
+            <table class="table-meta">
+              <tbody>
+                <tr><th scope="row">Titolo</th><td><span class="code">dc:title</span></td><td property="dc:title" lang="sv">Nils Holgerssons underbara resa genom Sverige</td></tr>
+                <tr><th scope="row">Titolo in italiano</th><td><span class="code">dcterms:alternative</span></td><td property="dcterms:alternative" lang="it">Il viaggio meraviglioso di Nils Holgersson (da verificare)</td></tr>
+                <tr><th scope="row">Autrice</th><td><span class="code">dc:creator</span></td><td property="dc:creator">Lagerlöf, Selma, 1858–1940</td></tr>
+                <tr><th scope="row">Data</th><td><span class="code">dcterms:issued</span></td><td property="dcterms:issued">1906–1907 (due volumi)</td></tr>
+                <tr><th scope="row">Editore</th><td><span class="code">dc:publisher</span></td><td property="dc:publisher">Albert Bonniers förlag, Stockholm</td></tr>
+                <tr><th scope="row">Lingua</th><td><span class="code">dc:language</span></td><td property="dc:language" content="sv">svedese</td></tr>
+                <tr><th scope="row">Tipo</th><td><span class="code">dc:type</span></td><td property="dc:type" content="Text">Testo (libro di lettura / romanzo per ragazzi)</td></tr>
+                <tr><th scope="row">Destinatari</th><td><span class="code">dcterms:audience</span></td><td property="dcterms:audience">Bambini della scuola elementare</td></tr>
+                <tr><th scope="row">Soggetto</th><td><span class="code">dc:subject</span></td><td property="dc:subject">Letteratura per l'infanzia; Geografia della Svezia; Identità nazionale; Folklore</td></tr>
+                <tr><th scope="row">Copertura spaziale</th><td><span class="code">dcterms:spatial</span></td><td property="dcterms:spatial">Svezia</td></tr>
+                <tr><th scope="row">Diritti</th><td><span class="code">dc:rights</span></td><td property="dc:rights">Pubblico dominio (autrice morta nel 1940)</td></tr>
+                <tr><th scope="row">Formati digitali</th><td><span class="code">dcterms:hasFormat</span></td><td><a property="dcterms:hasFormat" href="xml/nils-holgersson-tei.xml">Full-text TEI (XML)</a> · <a href="xml/nils-holgersson-dc.xml">Metadati XML</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= TAB: TESTO / IMMAGINI / VIDEO ================= -->
+        <section aria-labelledby="h-risorse">
+          <h2 id="h-risorse">Le risorse digitali</h2>
+          <div class="tabs">
+            <div role="tablist" aria-label="Tipologie di risorsa">
+              <button role="tab" id="tab-testo" aria-selected="true" aria-controls="pan-testo">Testo</button>
+              <button role="tab" id="tab-img" aria-selected="false" aria-controls="pan-img" tabindex="-1">Immagini</button>
+              <button role="tab" id="tab-video" aria-selected="false" aria-controls="pan-video" tabindex="-1">Video</button>
+            </div>
+
+            <div role="tabpanel" id="pan-testo" aria-labelledby="tab-testo">
+              <h3>Il testo</h3>
+              <p>Il testo svedese è in pubblico dominio e se ne conserva una trascrizione codificata in TEI (<a href="xml/nils-holgersson-tei.xml">apri il file XML</a>). L'attacco del primo capitolo:</p>
+              <blockquote class="passo" lang="sv" cite="#fonte-testo">
+                Det var en gång en pojke. Han var kanske fjorton år gammal, lång och slokig och blåvit i håret. Han dög inte mycket till.
+              </blockquote>
+              <p class="note-box" id="fonte-testo">Trascrizione da collazionare con l'edizione digitale (Project Runeberg o Litteraturbanken) prima della consegna.</p>
+              <p>Traduzioni di pubblico dominio sono elencate più sotto, nei collegamenti tipizzati.</p>
+            </div>
+
+            <div role="tabpanel" id="pan-img" aria-labelledby="tab-img" hidden>
+              <h3>La statua di Karlskrona</h3>
+              <figure>
+                <div class="placeholder-img" data-zoom tabindex="0" role="img" aria-label="Segnaposto: fotografia della statua di Nils Holgersson a Karlskrona">
+                  Fotografia della statua «Sprungen ur boken» (Karlskrona)<br>da inserire dopo aver scelto un'immagine con licenza libera (Wikimedia Commons)
+                </div>
+                <figcaption>Statua di Nils Holgersson a Karlskrona. Scultura: Ralf Borselius. Fotografia: [autore e licenza, da compilare].</figcaption>
+              </figure>
+              <p>La scultura nacque da un concorso con 24 proposte; la giuria, formata da rappresentanti del corpo cittadino e della comunità dell'Ammiragliato, scelse il progetto di Borselius. Nel romanzo Nils, inseguito dall'ira della statua di Carlo XI, si salva sotto il cappello di Rosenbom.</p>
+              <h3>Un oggetto d'epoca</h3>
+              <p>Un gioco da tavolo del 1907 ispirato al libro è stato digitalizzato dalla Biblioteca Reale svedese: <a href="https://runeberg.org/spelnils/" target="_blank" rel="noopener">Sällskapsspelet Nils Holgerssons underbara resa genom Sverige</a> (Project Runeberg).</p>
+            </div>
+
+            <div role="tabpanel" id="pan-video" aria-labelledby="tab-video" hidden>
+              <h3>Il film del 1962</h3>
+              <p><em>Nils Holgerssons underbara resa</em>, regia di Kenne Fant, uscito in Svezia il 12 settembre 1962; protagonista Sven Lundberg. La durata è indicata come 95 o 98 minuti a seconda della fonte. Il film è tuttora protetto da diritti: si rinvia alla scheda esterna e non si ospitano estratti.</p>
+              <p><a class="btn secondary" href="https://en.wikipedia.org/wiki/Adventures_of_Nils_Holgersson" target="_blank" rel="noopener">Scheda del film</a></p>
+              <div class="placeholder-img" role="img" aria-label="Segnaposto: locandina del film del 1962">Locandina del film del 1962: da inserire solo se la licenza lo consente</div>
+              <h3>Adattamento animato del 1980</h3>
+              <p class="note-box">Da verificare (produzione, diritti, eventuali clip): in questa versione del progetto è solo un segnaposto.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= MAPPA ================= -->
+        <section aria-labelledby="h-mappa">
+          <h2 id="h-mappa">Mappa del viaggio</h2>
+          <p>Dal sud (Skåne) alla Lapponia: le tappe confermate dalle fonti consultate. Il percorso completo sarà costruito sul testo.</p>
+          <div id="mappa" role="region" aria-label="Mappa interattiva del viaggio di Nils"></div>
+          <p class="muted">Mappa realizzata con <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>, dati cartografici OpenStreetMap.</p>
+        </section>
+
+        <!-- ================= ACCORDION ================= -->
+        <section aria-labelledby="h-approf">
+          <h2 id="h-approf">Approfondimenti</h2>
+          <div class="accordion">
+            <button id="a1" aria-expanded="false" aria-controls="ap1">Un libro di geografia per la scuola</button>
+            <div class="panel" id="ap1" role="region" aria-labelledby="a1" hidden>
+              <p>Il successo del libro ebbe un peso nell'assegnazione a Lagerlöf del premio Nobel per la letteratura nel 1909, la prima donna e il primo svedese a riceverlo. Il progetto didattico (insegnare ai bambini la geografia e la cultura del paese) è la ragione per cui l'opera è la più adatta, nella raccolta, a verificare il legame tra letteratura per l'infanzia e identità nazionale.</p>
+            </div>
+            <button id="a2" aria-expanded="false" aria-controls="ap2">Come è codificato il testo (modello TEI)</button>
+            <div class="panel" id="ap2" role="region" aria-labelledby="a2" hidden>
+              <p>Il file TEI descrive questi fenomeni del testo:</p>
+              <ul>
+                <li><strong>personaggi</strong>: <span class="code">&lt;rs type="person"&gt;</span> e <span class="code">&lt;persName&gt;</span>;</li>
+                <li><strong>animali parlanti</strong>: <span class="code">&lt;rs type="animal"&gt;</span>;</li>
+                <li><strong>luoghi</strong>: <span class="code">&lt;placeName ref="#…"&gt;</span>, collegati all'indice dei luoghi;</li>
+                <li><strong>tempo</strong>: <span class="code">&lt;date&gt;</span>;</li>
+                <li><strong>discorso diretto</strong>: <span class="code">&lt;q who="#…"&gt;</span>;</li>
+                <li><strong>termini geografico-didattici</strong>: <span class="code">&lt;term type="geografia"&gt;</span>;</li>
+                <li><strong>grafia</strong>: <span class="code">&lt;choice&gt;&lt;orig&gt;&lt;reg&gt;</span> per le forme da normalizzare.</li>
+              </ul>
+            </div>
+            <button id="a3" aria-expanded="false" aria-controls="ap3">Autorità e riconciliazione</button>
+            <div class="panel" id="ap3" role="region" aria-labelledby="a3" hidden>
+              <p>Persone, luoghi e concetti dell'item sono elencati nella <a href="dati.html">pagina dei dati</a> e collegati a Wikidata, VIAF e GeoNames; gli stessi riferimenti compaiono come attributi <span class="code">ref</span> nel file TEI.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= COLLEGAMENTI TIPIZZATI ================= -->
+        <section aria-labelledby="h-link">
+          <h2 id="h-link">Collegamenti tipizzati a risorse esterne</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Relazione</th><th>Risorsa</th><th>Proprietà</th></tr></thead>
+              <tbody>
+                <tr><td>Traduzione inglese</td><td><a href="https://www.gutenberg.org/etext/10935" target="_blank" rel="noopener">The Wonderful Adventures of Nils</a> (Velma Swanston Howard, 1907)</td><td><span class="code">dcterms:hasVersion</span></td></tr>
+                <tr><td>Traduzione tedesca</td><td><a href="https://www.gutenberg.org/etext/31114" target="_blank" rel="noopener">Wunderbare Reise des kleinen Nils Holgersson</a> (Pauline Klaiber)</td><td><span class="code">dcterms:hasVersion</span></td></tr>
+                <tr><td>Traduzione francese</td><td><a href="https://www.gutenberg.org/ebooks/66480" target="_blank" rel="noopener">Le Merveilleux voyage de Nils Holgersson</a> (Thékla Hammar)</td><td><span class="code">dcterms:hasVersion</span></td></tr>
+                <tr><td>Traduzione olandese</td><td><a href="https://www.gutenberg.org/ebooks/29320" target="_blank" rel="noopener">Niels Holgersson's Wonderbare Reis</a> (Margaretha Meijboom)</td><td><span class="code">dcterms:hasVersion</span></td></tr>
+                <tr><td>Adattamento cinematografico</td><td><a href="https://en.wikipedia.org/wiki/Adventures_of_Nils_Holgersson" target="_blank" rel="noopener">Film del 1962</a></td><td><span class="code">dcterms:relation</span></td></tr>
+                <tr><td>Oggetto d'epoca</td><td><a href="https://runeberg.org/spelnils/" target="_blank" rel="noopener">Gioco da tavolo del 1907</a></td><td><span class="code">dcterms:relation</span></td></tr>
+                <tr><td>Luogo del libro</td><td><a href="https://www.visitkarlskrona.se/en/statue-rosenbom" target="_blank" rel="noopener">Statua di Rosenbom, Karlskrona</a></td><td><span class="code">dcterms:spatial</span></td></tr>
+                <tr><td>Luogo del libro</td><td><a href="https://www.visitblekinge.se/en/statue-karl-xi" target="_blank" rel="noopener">Statua di Carlo XI, Karlskrona</a></td><td><span class="code">dcterms:spatial</span></td></tr>
+                <tr><td>Luogo del libro</td><td><a href="https://www.svenskakyrkan.se/amiralitetkarlskrona/amiralitetskyrkan-rosenbom-nils-holgersson-och-skeppet" target="_blank" rel="noopener">Chiesa dell'Ammiragliato: Rosenbom, Nils e la statua</a></td><td><span class="code">dcterms:spatial</span></td></tr>
+                <tr><td>Studio critico</td><td><a href="https://lup.lub.lu.se/record/578333" target="_blank" rel="noopener">100 år med Nils Holgersson</a> (Università di Lund)</td><td><span class="code">dcterms:isReferencedBy</span></td></tr>
+                <tr><td>Studio critico</td><td><a href="https://www.barnboken.net/index.php/clr/article/view/80" target="_blank" rel="noopener">Articolo su <em>Barnboken</em></a></td><td><span class="code">dcterms:isReferencedBy</span></td></tr>
+                <tr><td>Materiale didattico</td><td><a href="https://litteraturbanken.se/red/skola/pdf/NilsHolgerssonFordjupning.pdf" target="_blank" rel="noopener">Approfondimento di Litteraturbanken</a></td><td><span class="code">dcterms:isReferencedBy</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <!-- ================= ASIDE: ITEM CORRELATI ================= -->
+      <aside class="aside" aria-label="Navigazione contestuale">
+        <section>
+          <h2>In questa pagina</h2>
+          <ul>
+            <li><a href="#h-scheda">Scheda descrittiva</a></li>
+            <li><a href="#h-risorse">Risorse digitali</a></li>
+            <li><a href="#h-mappa">Mappa del viaggio</a></li>
+            <li><a href="#h-approf">Approfondimenti</a></li>
+            <li><a href="#h-link">Collegamenti esterni</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Item correlati</h2>
+          <ul>
+            <li><a href="catalogo.html#t02">Topelius, <em>Läsning för barn</em></a><span class="rel">stesso tema: scuola e identità nazionale</span></li>
+            <li><a href="catalogo.html#t03">Asbjørnsen e Moe, <em>Norske Folkeeventyr</em></a><span class="rel">stesso tema: folklore e lingua</span></li>
+            <li><a href="catalogo.html#t05">Beskow, <em>Tomtebobarnen</em></a><span class="rel">stesso paese, tema: paesaggio</span></li>
+            <li><a href="catalogo.html#t08">Jansson, <em>Kometjakten</em></a><span class="rel">tema: paesaggio</span></li>
+          </ul>
+        </section>
+        <section>
+          <h2>File</h2>
+          <ul>
+            <li><a href="xml/nils-holgersson-dc.xml">Metadati XML (Dublin Core)</a></li>
+            <li><a href="xml/nils-holgersson-tei.xml">Full-text TEI</a></li>
+            <li><a href="dati.html">Tabella delle autorità</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Modale per ingrandire le immagini -->
+  <div class="modal" id="modal-img" role="dialog" aria-modal="true" aria-label="Immagine ingrandita" hidden>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Chiudi">&times;</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container"><p>Progetto per l'esame di Digital Humanities · [Cognome, Nome] · novembre 2026</p></div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/mappa-nils.js"></script>
+</body>
+</html>

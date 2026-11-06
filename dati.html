@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dati e autorità · Nils, Pippi e gli altri</title>
+  <meta name="description" content="Tabella strutturata delle persone, dei luoghi e dei concetti della raccolta, con riconciliazione ai record di autorità.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <nav class="topnav" id="topnav" aria-label="Navigazione principale">
+    <a class="brand" href="index.html">Nils, Pippi e gli altri</a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a class="off" aria-disabled="true">Progetto</a>
+      <a href="catalogo.html">Catalogo</a>
+      <a href="dati.html" class="active" aria-current="page">Dati</a>
+    </div>
+    <button class="icon" onclick="toggleNav()" aria-label="Apri o chiudi il menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <main id="contenuto" class="container">
+    <ol class="breadcrumb" aria-label="Percorso">
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Dati</li>
+    </ol>
+
+    <h1>Dati e record di autorità</h1>
+    <p>Le entità della raccolta (persone, luoghi, concetti) vengono collegate a vocabolari e record di autorità, in modo che nomi diversi della stessa entità siano riconoscibili e il progetto possa dialogare con altre banche dati.</p>
+
+    <div class="note-box">
+      <strong>Stato della riconciliazione.</strong> Le colonne mostrano un link di ricerca sul vocabolario; quando l'identificativo viene verificato e inserito, il link diventa diretto e lo stato passa a «riconciliato».
+    </div>
+
+    <section class="filters" aria-label="Filtri della tabella" style="grid-template-columns: 1fr auto;">
+      <div>
+        <label id="l-tipo">Tipo di entità</label>
+        <div class="chips" id="f-tipo" role="group" aria-labelledby="l-tipo">
+          <button class="chip" data-v="tutti" aria-pressed="true">Tutte</button>
+          <button class="chip" data-v="persona" aria-pressed="false">Persone</button>
+          <button class="chip" data-v="luogo" aria-pressed="false">Luoghi</button>
+          <button class="chip" data-v="concetto" aria-pressed="false">Concetti</button>
+        </div>
+      </div>
+      <div style="align-self:end"><button class="btn" id="csv" type="button">Esporta CSV</button></div>
+    </section>
+
+    <p class="result-count" id="count" role="status" aria-live="polite"></p>
+
+    <div class="table-wrap">
+      <table>
+        <caption class="muted" style="text-align:left;padding:8px 12px">Entità della raccolta e vocabolari di riferimento</caption>
+        <thead>
+          <tr>
+            <th scope="col">Entità</th><th scope="col">Tipo</th><th scope="col">Ruolo nel progetto</th>
+            <th scope="col">Wikidata</th><th scope="col">VIAF</th><th scope="col">GeoNames</th>
+            <th scope="col">LCSH</th><th scope="col">Stato</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <h2>Vocabolari scelti</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Vocabolario</th><th>Per che cosa</th><th>Perché</th></tr></thead>
+        <tbody>
+          <tr><td>Wikidata</td><td>tutte le entità</td><td>copertura ampia, identificativi stabili, molte etichette nelle lingue nordiche</td></tr>
+          <tr><td>VIAF</td><td>persone</td><td>aggrega gli archivi di autorità delle biblioteche nazionali</td></tr>
+          <tr><td>GeoNames</td><td>luoghi</td><td>coordinate e gerarchie amministrative</td></tr>
+          <tr><td>LCSH</td><td>soggetti</td><td>vocabolario controllato per la classificazione per soggetto</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container"><p>Progetto per l'esame di Digital Humanities · [Cognome, Nome] · novembre 2026</p></div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dati.js"></script>
+</body>
+</html>

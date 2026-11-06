@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogo · Nils, Pippi e gli altri</title>
+  <meta name="description" content="Catalogo dei tredici item: ricerca per autore, titolo, paese, anno e tema, vista a schede o a linea del tempo.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <nav class="topnav" id="topnav" aria-label="Navigazione principale">
+    <a class="brand" href="index.html">Nils, Pippi e gli altri</a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a class="off" aria-disabled="true">Progetto</a>
+      <a href="catalogo.html" class="active" aria-current="page">Catalogo</a>
+      <a href="dati.html">Dati</a>
+    </div>
+    <button class="icon" onclick="toggleNav()" aria-label="Apri o chiudi il menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <main id="contenuto" class="container">
+    <ol class="breadcrumb" aria-label="Percorso">
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Catalogo</li>
+    </ol>
+
+    <h1>Catalogo</h1>
+    <p>Tredici opere di quattro paesi nordici (1835–1981). La risorsa principale di ogni opera è il testo: online per le opere in pubblico dominio, con una scheda di riferimento per quelle ancora protette.</p>
+
+    <section class="filters" aria-label="Ricerca e filtri">
+      <div class="filter-grid">
+        <div>
+          <label for="f-autore">Autore</label>
+          <select id="f-autore"><option value="tutti">Tutti gli autori</option></select>
+        </div>
+        <div>
+          <label for="f-titolo">Titolo</label>
+          <select id="f-titolo"><option value="tutti">Tutti i titoli</option></select>
+        </div>
+        <div>
+          <label for="f-paese">Paese</label>
+          <select id="f-paese"><option value="tutti">Tutti i paesi</option></select>
+        </div>
+        <div>
+          <label for="f-anno">Anno</label>
+          <select id="f-anno"><option value="tutti">Tutti gli anni</option></select>
+        </div>
+        <div>
+          <label for="f-tema">Tema</label>
+          <select id="f-tema">
+            <option value="tutti">Tutti i temi</option>
+            <option value="paesaggio">Paesaggio</option>
+            <option value="folklore">Folklore</option>
+            <option value="lingua">Lingua</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter-side">
+        <div>
+          <label for="q">Ricerca libera</label>
+          <input id="q" type="search" placeholder="una parola qualsiasi…" autocomplete="off">
+        </div>
+        <div>
+          <label id="l-view">Vista</label>
+          <div class="chips" id="f-view" role="group" aria-labelledby="l-view">
+            <button class="chip" data-v="schede" aria-pressed="true">Schede</button>
+            <button class="chip" data-v="timeline" aria-pressed="false">Linea del tempo</button>
+          </div>
+        </div>
+        <div><button class="btn secondary" id="reset" type="button">Azzera i filtri</button></div>
+      </div>
+    </section>
+
+    <p class="result-count" id="count" role="status" aria-live="polite"></p>
+
+    <div class="grid" id="grid"></div>
+    <ol class="timeline" id="timeline" hidden></ol>
+  </main>
+
+  <!-- Modale: scheda rapida (W3Schools: Modal Box) -->
+  <div class="modal" id="modal-item" role="dialog" aria-modal="true" aria-labelledby="modal-item-title" hidden>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Chiudi">&times;</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container"><p>Progetto per l'esame di Digital Humanities · [Cognome, Nome] · novembre 2026</p></div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

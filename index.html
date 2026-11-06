@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nils, Pippi e gli altri · Letteratura per l'infanzia nordica</title>
+
+  <!-- Metadati Dublin Core (record della raccolta) -->
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+  <meta name="DC.title" content="Nils, Pippi e gli altri. Paesaggio, folklore e lingua nella letteratura per l'infanzia nordica">
+  <meta name="DC.creator" content="[Cognome, Nome]">
+  <meta name="DC.subject" content="Letteratura per l'infanzia; Paesi nordici; Identità nazionale; Folklore; Digital Humanities">
+  <meta name="DC.description" content="Raccolta digitale di tredici opere chiave della letteratura per l'infanzia di Danimarca, Svezia, Norvegia e Finlandia (1835–1981), con analisi approfondita de «Il viaggio meraviglioso di Nils Holgersson» di Selma Lagerlöf.">
+  <meta name="DC.publisher" content="[Università / Corso di Digital Humanities]">
+  <meta name="DC.date" content="2026-11">
+  <meta name="DC.type" content="Collection">
+  <meta name="DC.format" content="text/html">
+  <meta name="DC.identifier" content="https://[utente].github.io/nils-archivio/">
+  <meta name="DC.language" content="it">
+  <meta name="DC.coverage" content="Danimarca; Svezia; Norvegia; Finlandia, 1835–1981">
+  <meta name="DC.rights" content="Contenuti del sito: [licenza da scegliere]. Le risorse esterne restano dei rispettivi titolari.">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <nav class="topnav" id="topnav" aria-label="Navigazione principale">
+    <a class="brand" href="index.html">Nils, Pippi e gli altri</a>
+    <div class="links">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a class="off" aria-disabled="true">Progetto</a>
+      <a href="catalogo.html">Catalogo</a>
+      <a href="dati.html">Dati</a>
+    </div>
+    <button class="icon" onclick="toggleNav()" aria-label="Apri o chiudi il menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <div class="banner" role="img" aria-label="Fascia decorativa"></div>
+
+  <header class="container hero-home">
+    <h1>Nils, Pippi e gli altri</h1>
+    <p class="sub">Paesaggio, folklore e lingua nella letteratura per l'infanzia nordica (1835–1981)</p>
+    <a class="btn" href="catalogo.html">Inizia il viaggio</a>
+  </header>
+
+  <main id="contenuto" class="container">
+
+    <section class="home-section" aria-labelledby="h-progetto">
+      <h2 id="h-progetto">Il progetto</h2>
+      <p>Tra Ottocento e Novecento, in Danimarca, Svezia, Norvegia e Finlandia, scrivere per i bambini significò anche <strong>raccontare un paese</strong>: i suoi paesaggi, le sue storie popolari, la sua lingua. Le fiabe raccolte da Asbjørnsen e Moe, i libri di lettura di Topelius e il racconto geografico di Lagerlöf partecipano, in modi diversi, a questo progetto.</p>
+      <p>La domanda che guida la raccolta è: <strong>come ha contribuito la letteratura per l'infanzia alla costruzione dell'identità nazionale nei paesi nordici?</strong> <span class="nolink">continua a leggere</span></p>
+    </section>
+
+    <section class="home-section" aria-labelledby="h-raccolta">
+      <h2 id="h-raccolta">Esplora la raccolta</h2>
+      <p>L'archivio riunisce <strong>tredici opere</strong> di quattro paesi, dalle fiabe di Andersen ai romanzi di Astrid Lindgren. Di ciascuna si può consultare il testo, quando è liberamente disponibile online, oppure una scheda di riferimento. Le opere si possono cercare per autore, titolo, paese, anno e tema, e guardare in ordine di tempo.</p>
+      <div class="stats" id="stats" aria-live="polite"></div>
+      <p><a class="btn" href="catalogo.html">Vai alle opere</a></p>
+    </section>
+
+    <section aria-labelledby="h-assi">
+      <h2 id="h-assi">Tre chiavi di lettura</h2>
+      <div class="three">
+        <article class="card">
+          <h3>Paesaggio</h3>
+          <p>Il territorio come materia di narrazione e di educazione: dal viaggio attraverso la Svezia al bosco, fino alla valle dei Mumin.</p>
+          <p><span class="nolink">Vai ai luoghi</span></p>
+        </article>
+        <article class="card">
+          <h3>Folklore</h3>
+          <p>Il patrimonio orale raccolto e riscritto: i racconti popolari norvegesi, Andersen, i troll e le creature del bosco.</p>
+          <p><span class="nolink">Vai ai racconti</span></p>
+        </article>
+        <article class="card">
+          <h3>Lingua</h3>
+          <p>La scrittura per l'infanzia come scelta linguistica: il registro delle fiabe, lo svedese in Finlandia, il gioco verbale.</p>
+          <p><span class="nolink">Vai alle parole</span></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><span class="nolink">Credits</span> <span class="nolink">Licenze</span> <span class="nolink">Bibliografia e sitografia</span></p>
+      <p>Progetto per l'esame di Digital Humanities · [Cognome, Nome] · novembre 2026</p>
+      <p>Le risorse esterne appartengono ai rispettivi titolari; i collegamenti a risorse con diritti riservati non implicano la riproduzione dei file.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /* statistiche calcolate dai dati */
+    (function () {
+      const unici = function (campo) { return new Set(ITEMS.map(function (i) { return i[campo]; })).size; };
+      const anni = ITEMS.map(function (i) { return i.anno; });
+      const dati = [
+        [ITEMS.length, "opere"], [unici("paese"), "paesi"], [unici("autore"), "autori"],
+        [Math.min.apply(null, anni) + "–" + Math.max.apply(null, anni), "arco cronologico"]
+      ];
+      document.getElementById("stats").innerHTML = dati.map(function (d) {
+        return "<div class='stat'><strong>" + d[0] + "</strong>" + d[1] + "</div>";
+      }).join("");
+    })();
+  </script>
+</body>
+</html>

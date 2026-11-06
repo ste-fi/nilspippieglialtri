@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Record Dublin Core (DC + DCTERMS) per l'item «Nils Holgerssons underbara resa genom Sverige».
+  Da fare: sostituire gli identificativi segnati con RICONCILIARE dopo averli verificati
+  (Wikidata, VIAF, GeoNames) e aggiornare l'URL di pubblicazione.
+-->
+<record xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:dcterms="http://purl.org/dc/terms/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <dc:title xml:lang="sv">Nils Holgerssons underbara resa genom Sverige</dc:title>
+  <dcterms:alternative xml:lang="it">Il viaggio meraviglioso di Nils Holgersson attraverso la Svezia</dcterms:alternative>
+  <!-- titolo italiano da verificare su OPAC SBN -->
+
+  <dc:creator>Lagerlöf, Selma, 1858-1940 </dc:creator>
+  <!-- RICONCILIARE: URI VIAF e Wikidata dell'autrice -->
+
+  <dc:publisher>Albert Bonniers förlag, Stockholm</dc:publisher>
+  <dcterms:issued xsi:type="dcterms:W3CDTF">1906/1907</dcterms:issued>
+  <dc:language xsi:type="dcterms:ISO639-3">swe</dc:language>
+  <dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+  <dc:format>text/xml</dc:format>
+  <dcterms:medium>Libro a stampa in due volumi; trascrizione digitale in TEI</dcterms:medium>
+
+  <dc:subject>Letteratura per l'infanzia svedese</dc:subject>
+  <dc:subject>Geografia della Svezia</dc:subject>
+  <dc:subject>Identità nazionale</dc:subject>
+  <dc:subject>Folklore</dc:subject>
+  <!-- RICONCILIARE: soggetti con LCSH o Wikidata -->
+
+  <dc:description xml:lang="it">Libro di lettura di geografia per la scuola elementare svedese: un ragazzo, rimpicciolito da un folletto, attraversa la Svezia da Skåne alla Lapponia in groppa a un'oca.</dc:description>
+  <dcterms:audience>Bambini della scuola elementare</dcterms:audience>
+
+  <dcterms:spatial>Svezia</dcterms:spatial>
+  <!-- RICONCILIARE: GeoNames per Svezia, Skåne, Karlskrona, Kebnekaise -->
+  <dc:coverage>Svezia, inizio Novecento</dc:coverage>
+
+  <dc:rights>Pubblico dominio (autrice morta nel 1940)</dc:rights>
+  <dc:identifier>https://[utente].github.io/nils-archivio/item-nils-holgersson.html</dc:identifier>
+
+  <dcterms:isPartOf>Nils, Pippi e gli altri. Paesaggio, folklore e lingua nella letteratura per l'infanzia nordica</dcterms:isPartOf>
+  <dcterms:hasFormat>xml/nils-holgersson-tei.xml</dcterms:hasFormat>
+
+  <dcterms:hasVersion xml:lang="en">https://www.gutenberg.org/etext/10935</dcterms:hasVersion>
+  <dcterms:hasVersion xml:lang="de">https://www.gutenberg.org/etext/31114</dcterms:hasVersion>
+  <dcterms:hasVersion xml:lang="fr">https://www.gutenberg.org/ebooks/66480</dcterms:hasVersion>
+  <dcterms:hasVersion xml:lang="nl">https://www.gutenberg.org/ebooks/29320</dcterms:hasVersion>
+
+  <dc:relation>https://en.wikipedia.org/wiki/Adventures_of_Nils_Holgersson</dc:relation>
+  <dc:relation>https://runeberg.org/spelnils/</dc:relation>
+  <dcterms:isReferencedBy>https://lup.lub.lu.se/record/578333</dcterms:isReferencedBy>
+
+  <dc:source>Project Runeberg (edizione digitale, collocazione da verificare)</dc:source>
+</record>
